@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/btn_bg"
+    android:layout_height="match_parent" android:id="@+id/mainll">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/UserType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:text="Welcome User!!"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_alignRight="@+id/UserType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_logout"
+            android:background="@color/bg_login"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="right"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/productidupdate"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:hint="Enter product-id \n to be updated"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint" />
+        <EditText
+            android:id="@+id/newproductname"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:hint="Enter newproduct\n to update"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/updatebtn"
+        android:background="@color/bg_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Update existing products"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ml"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ml2"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            </LinearLayout>
+
+
+        <EditText
+                android:id="@+id/noOfProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:hint="Enter number of products to be stored"
+                android:inputType="number"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint" />
+            <Button
+                android:id="@+id/btnSubmitNo"
+                android:background="@color/bg_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="submit"
+
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
